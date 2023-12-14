@@ -9,10 +9,12 @@
 }
 
 * {
-  margin: 0;
+  margin: 0; /*
+  background-color: #e6e6e6;*/
 }
 
 body {
+  background-color: #e6e6e6;
   max-width: 1850px;
   margin: auto;
 }
@@ -49,18 +51,21 @@ a {
 }
 
 .top-grid .item1 h1 {
+  background-color: #c7ddea;
   font-size: 60px;
   width: 60%;
   margin: 100px auto 0 auto;
 }
 
 .top-grid .item1 p {
+  background-color: #c7ddea;
   font-size: 24px;
   width: 60%;
   margin: 20px auto 0 auto;
 }
 
 .top-grid .item1 p span {
+  background-color: #c7ddea;
   color: white;
 }
 
@@ -86,7 +91,13 @@ a {
 }
 
 .top-grid .item2 h1 {
+  font-size: 46px;
+  background-color: #f17949;
   color: white;
+}
+
+.top-grid .item2 p {
+  background-color: #f17949;
 }
 
 .top-grid .item3 {
@@ -99,7 +110,13 @@ a {
 }
 
 .top-grid .item3 h1 {
+  font-size: 46px;
+  background-color: #fab131;
   color: white;
+}
+
+.top-grid .item3 p {
+  background-color: #fab131;
 }
 
 .msg {
@@ -126,6 +143,7 @@ nav a {
 }
 
 .mid-grid {
+  background-color: #a9a19e;
   width: 100%;
   height: 100%;
   display: grid;
@@ -140,16 +158,11 @@ nav a {
 }
 
 .mid-grid .item1 h1 {
+  background-color: #a9a19e;
   color: white;
   font-size: 60px;
   width: 60%;
   margin: 100px auto 0 auto;
-}
-
-.mid-grid .item1 p {
-  font-size: 24px;
-  width: 60%;
-  margin: 20px auto 0 auto;
 }
 
 .mid-grid .item1 .join-btn {
@@ -170,11 +183,13 @@ nav a {
   grid-row: 1/2;
   padding-top: 100px;
   padding-left: 20%;
+  padding-right: 20%;
 }
 
 .mid-grid .item2 p {
+  background-color: #a9a19e;
   font-size: 24px;
-  width: 70%;
+  width: 100%;
 }
 
 .mid-grid .item3 {
@@ -187,17 +202,18 @@ nav a {
 }
 
 .mid-grid .item3 h1 {
+  background-color: #fab131;
   color: white;
   font-size: 60px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .mid-grid .item3 p {
+  background-color: #fab131;
   font-size: 24px;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 20px;
 }
 
 .bottom-section {
@@ -214,15 +230,136 @@ nav a {
   grid-template-rows: 50% 50%;
 }
 
+.bottom-grid h1,
+p {
+  color: rgba(0, 0, 0, 0.55);
+}
+
 .bottom-grid .item0 {
-  display: flex;
   background-color: #c7ddea;
-  align-items: center;
 }
 
 .bottom-grid .item0 h1 {
-  font-size: 70px;
   color: black;
+  font-size: 60px;
   text-align: center;
-  margin: auto;
+  padding-top: 25%;
+  background-color: #c7ddea;
+}
+
+.bottom-grid .item1 {
+  background-color: #e8eff3;
+}
+
+.bottom-grid .item1 h1 {
+  display: block;
+  background-color: #e8eff3;
+  font-size: 40px;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.bottom-grid .item1 p {
+  display: block;
+  background-color: #e8eff3;
+  font-size: 24px;
+  padding-top: 20%;
+  text-align: center;
+}
+
+.bottom-grid .item2 {
+  background-color: #e6e6e6;
+}
+
+.bottom-grid .item2 h1 {
+  display: block;
+  font-size: 40px;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.bottom-grid .item2 p {
+  display: block;
+  font-size: 24px;
+  padding-top: 20%;
+  text-align: center;
+}
+
+.bottom-grid .item3 {
+  background-color: #e8eff3;
+}
+
+.bottom-grid .item3 h1 {
+  background-color: #e8eff3;
+  display: block;
+  font-size: 40px;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.bottom-grid .item3 p {
+  background-color: #e8eff3;
+  display: block;
+  font-size: 24px;
+  padding-top: 20%;
+  text-align: center;
+}
+
+.bottom-grid .item4 {
+  background-color: #f17949;
+}
+
+.bottom-grid .item4 h1 {
+  background-color: #f17949;
+  display: block;
+  font-size: 40px;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.bottom-grid .item4 p {
+  background-color: #f17949;
+  display: block;
+  font-size: 24px;
+  padding-top: 20%;
+  text-align: center;
+}
+
+.bottom-grid .item5 {
+  background-color: #e8eff3;
+}
+
+.bottom-grid .item5 h1 {
+  background-color: #e8eff3;
+  display: block;
+  font-size: 40px;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.bottom-grid .item5 p {
+  background-color: #e8eff3;
+  display: block;
+  font-size: 24px;
+  padding-top: 20%;
+  text-align: center;
+}
+
+footer {
+  width: 80%;
+  height: 600px;
+  margin: 0 auto;
+  font-size: 24px;
+  text-align: center;
+  background-color: #797370;
+}
+
+.up-arrow .material-symbols-outlined {
+  background-color: #a9a19e;
+  font-size: 50px;
+}
+
+.top-footer {
+  background-color: #a9a19e;
+  padding-bottom: 40px;
 }
