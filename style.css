@@ -12,6 +12,11 @@
   margin: 0;
 }
 
+body {
+  max-width: 1850px;
+  margin: auto;
+}
+
 h1 {
   font-family: "FrankRuhlLibre", Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -29,7 +34,6 @@ a {
 }
 
 .top-grid {
-  background-color: aquamarine;
   width: 100%;
   height: 100%;
   display: grid;
@@ -56,8 +60,13 @@ a {
   margin: 20px auto 0 auto;
 }
 
+.top-grid .item1 p span {
+  color: white;
+}
+
 .top-grid .item1 .join-btn {
   font-size: 18px;
+  font-weight: bold;
   border: none;
   border-radius: 40px;
   height: 70px;
@@ -111,14 +120,12 @@ nav a {
 }
 
 .mid-section {
-  background-color: bisque;
   width: 80%;
   height: 1800px;
   margin: 0 auto;
 }
 
 .mid-grid {
-  background-color: aquamarine;
   width: 100%;
   height: 100%;
   display: grid;
@@ -133,6 +140,7 @@ nav a {
 }
 
 .mid-grid .item1 h1 {
+  color: white;
   font-size: 60px;
   width: 60%;
   margin: 100px auto 0 auto;
@@ -145,6 +153,7 @@ nav a {
 }
 
 .mid-grid .item1 .join-btn {
+  font-weight: bold;
   font-size: 18px;
   border: none;
   border-radius: 40px;
@@ -165,7 +174,7 @@ nav a {
 
 .mid-grid .item2 p {
   font-size: 24px;
-  width: 60%;
+  width: 70%;
 }
 
 .mid-grid .item3 {
@@ -189,4 +198,31 @@ nav a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+}
+
+.bottom-section {
+  width: 80%;
+  height: 900px;
+  margin: 0 auto;
+}
+
+.bottom-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+}
+
+.bottom-grid .item0 {
+  display: flex;
+  background-color: #c7ddea;
+  align-items: center;
+}
+
+.bottom-grid .item0 h1 {
+  font-size: 70px;
+  color: black;
+  text-align: center;
+  margin: auto;
 }
