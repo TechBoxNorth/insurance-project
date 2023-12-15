@@ -23,16 +23,30 @@ h1 {
 }
 
 p,
-a {
+a,
+form {
   font-family: "FiraSans", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
 
 .top-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #c7ddea;
   width: 80%;
   height: 600px;
   margin: 0 auto;
+}
+
+.top-section h1 {
+  font-size: 60px;
+}
+
+.top-section .man-baby {
+  height: 550px;
+  position: absolute;
+  transform: translate(390px, 25px);
 }
 
 nav {
@@ -50,7 +64,7 @@ nav a {
 
 .mid-section {
   width: 80%;
-  height: 900px;
+  height: 700px;
   margin: 0 auto;
 }
 
@@ -82,8 +96,8 @@ nav a {
   border-radius: 40px;
   height: 70px;
   width: 200px;
-  margin: 80px;
-  margin-left: 130px;
+  margin: 50px;
+  margin-left: 240px;
   box-shadow: 0 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -101,6 +115,27 @@ nav a {
   width: 100%;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: normal;
+}
+
+#email {
+  font-size: 16px;
+  height: 44px;
+  margin-bottom: 20px;
+}
+
+#message {
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 18px;
+  padding-top: 18px;
+  resize: none;
+}
+
 .bottom-section {
   background-image: url(img/map.png);
   background-size: cover;
@@ -109,9 +144,28 @@ nav a {
   margin: 0 auto;
 }
 
+.visit-card {
+  color: white;
+  background-color: #fab131;
+  position: relative;
+  transform: translate(100px, 50px);
+  height: 35%;
+  width: 28%;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+.visit-card h1 {
+  font-size: 60px;
+}
+
+.visit-card p {
+  font-weight: normal;
+}
+
 footer {
   width: 80%;
-  height: 600px;
+  height: 400px;
   margin: 0 auto;
   background-color: #797370;
 }
