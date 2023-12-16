@@ -169,3 +169,40 @@ footer {
   margin: 0 auto;
   background-color: #797370;
 }
+
+@media screen and (max-width: 600px) {
+  .top-section {
+    width: 100%;
+    justify-content: left;
+  }
+
+  .top-section h1 {
+    width: 50%;
+    padding-left: 32px;
+  }
+
+  .top-section .man-baby {
+    height: 550px;
+    position: absolute;
+    transform: translate(190px, 25px);
+  }
+
+  nav {
+    background-color: white;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+
+  .nav {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+  }
+
+  .contact {
+    background-color: #e6e6e6;
+  }
+}
